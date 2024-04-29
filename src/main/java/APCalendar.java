@@ -61,7 +61,7 @@ public class APCalendar
     /* to be implemented in part (b) */
     int sum = 0;
     sum+= firstDayOfYear(year);
-    sum+=dayOfYear(month,day,year);
+    sum+=dayOfYear(month,day,year)-1;
     sum=sum%7;
     return sum;
   }
